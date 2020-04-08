@@ -32,6 +32,7 @@ source "board/sama5d2_icp/Config.in.board"
 source "board/sam9x60ek/Config.in.board"
 source "board/sam9x60_ddr2_sip_eb/Config.in.board"
 source "board/sam9x60_sdr_sip_eb/Config.in.board"
+source "board/devboard-sama5d3/Config.in.board"
 source "contrib/board/Config.in.board"
 
 endchoice
@@ -62,6 +63,7 @@ config CONFIG_BOARDNAME
 	default "sam9x60ek" if CONFIG_SAM9X60EK
 	default "sam9x60_ddr2_sip_eb" if CONFIG_SAM9X60_DDR2_SIP_EB
 	default "sam9x60_sdr_sip_eb" if CONFIG_SAM9X60_SDR_SIP_EB
+	default "devboard_sama5d3" if CONFIG_DEVBOARD_SAMA5D3
 source "contrib/board/Config.in.boardname"
 
 config AT91SAM9260
