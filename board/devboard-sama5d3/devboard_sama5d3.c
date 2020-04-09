@@ -46,6 +46,8 @@
 #include "act8865.h"
 #include "twi.h"
 
+//This is something to trigger a change
+
 static void at91_dbgu_hw_init(void)
 {
 	/* Configure DBGU pin */
